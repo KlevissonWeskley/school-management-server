@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  api-school-management-pg:
+    container_name: school-management-db
+    image: bitnami/postgresql
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=klevisson
+      - POSTGRESQL_PASSWORD=klevisson
+      - POSTGRESQL_DATABASE=schoolmanagement
